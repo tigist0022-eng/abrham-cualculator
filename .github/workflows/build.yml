@@ -23,7 +23,7 @@ jobs:
               zlib1g-dev libncurses5-dev libncursesw5-dev libstdc++6 make build-essential \
               libffi-dev libssl-dev
           pip install --upgrade pip
-          pip install Cython==0.33.0 buildozer
+          pip install Cython==3.0.8 buildozer
 
       - name: Build with Buildozer
         run: |
@@ -34,4 +34,3 @@ jobs:
         with:
           name: abraham-calculator
           path: bin/*.apk
-
